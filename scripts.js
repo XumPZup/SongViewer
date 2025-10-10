@@ -6,7 +6,16 @@ async function init() {
     return files;
   }
 
-  const SONGS = await fetchSongList();
+  //const SONGS = await fetchSongList();
+
+  const SONGS = [
+	"Corcovado.txt",
+	"Corrida de Jangada.txt",  
+	"Desafinado.txt",          
+	"Garota de Ipanema.txt",
+	"Sei lá, (A vida tem sempre razão).txt",
+	"Você e Eu.txt"
+  ]
 
   const select = document.getElementById('song-select');
   const songDiv = document.getElementById('song');
