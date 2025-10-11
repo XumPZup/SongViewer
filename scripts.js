@@ -5,7 +5,7 @@ async function init() {
     const files = [...html.matchAll(/href="([^"]+\.txt)"/g)].map(m => m[1]);
     return files;
   }
-
+  // Only works locally or on a real server
   //const SONGS = await fetchSongList();
 
   const SONGS = [
@@ -70,24 +70,44 @@ async function init() {
   });
 }
 
+const SHARP_CHORDS = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+
+// map common flat names to their sharp equivalents for normalization
+const FLAT_TO_SHARP = {
+  'Db': 'C#', 'Eb': 'D#', 'Gb': 'F#', 'Ab': 'G#', 'Bb': 'A#'
+};
+
 const CHORDS = [
   'C', 'C#', 'D', 'D#', 'E', 'F', 'F#',
   'G', 'G#', 'A', 'A#', 'B'
 ];
 
+
+function normalizeNote(note) {
+  // note is like "C", "Db", "F#", etc.
+  return FLAT_TO_SHARP[note] || note;
+}
+
+function transposeNote(note, semitones) {
+  const n = normalizeNote(note);
+  const idx = SHARP_CHORDS.indexOf(n);
+  if (idx === -1) return note; // not a recognized root (leave as-is)
+  const newIdx = (idx + semitones + 12) % 12;
+  return SHARP_CHORDS[newIdx];
+}
+
+
 // Transpose helper (preserves whitespace)
 function transposeLine(line, semitones) {
-  return line.replace(/\b([A-G](?:#|b)?)([^\s|]*)/g, (match, root, suffix) => {
-    const flatToSharp = { Db: 'C#', Eb: 'D#', Gb: 'F#', Ab: 'G#', Bb: 'A#' };
-    root = flatToSharp[root] || root;
+  return line.replace(/\b([A-G](?:#|b)?)([^\/\s|]*)(?:\/([A-G](?:#|b)?))?/g,
+    (match, root, modifiers, bass) => {
+      const newRoot = transposeNote(root, semitones);
+      const newBass = bass ? '/' + transposeNote(bass, semitones) : '';
+      return newRoot + (modifiers || '') + newBass;
+    }
+  );
+} 
 
-    let i = CHORDS.indexOf(root);
-    if (i === -1) return match;
-
-    i = (i + semitones + 12) % 12;
-    return CHORDS[i] + suffix;
-  });
-}
 
 function transposeSong(semitones) {
   document.querySelectorAll('.chords').forEach(p => {
