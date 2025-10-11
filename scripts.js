@@ -13,6 +13,7 @@ async function init() {
 	"Corrida de Jangada.txt",  
 	"Desafinado.txt",          
 	"Garota de Ipanema.txt",
+	"Menino das Laranjas.txt",
 	"Sei lá, (A vida tem sempre razão).txt",
 	"Você e Eu.txt"
   ]
