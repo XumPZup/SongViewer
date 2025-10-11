@@ -9,11 +9,14 @@ async function init() {
   //const SONGS = await fetchSongList();
 
   const SONGS = [
+	"Aquarela do Brasil.txt",
 	"Corcovado.txt",
 	"Corrida de Jangada.txt",  
 	"Desafinado.txt",          
 	"Garota de Ipanema.txt",
+	"Mas Que Nada.txt",
 	"Menino das Laranjas.txt",
+	"Samba de Orfeu.txt",
 	"Sei lá, (A vida tem sempre razão).txt",
 	"Você e Eu.txt"
   ]
