@@ -29,4 +29,4 @@ Ab/C  |  Bbm7  Eb7  |  Ab/C  |  Bbm7  Eb7  |  AbMaj7  |  Bbm7(9)  |
 Ab/C  |  Bbm7  Eb7  |   repeat
 
 
-Ab/C   AbMaj7  Db6(9)/Ab
+Ab/C   AbMaj7  Db6(9)/Ab  |
