@@ -1,17 +1,17 @@
 ﻿Corcovado
 
 
-Fm6             |         %       |     E°(b13)           |      %      |  D#m7         |   G#7(9)    G#7(b9) |  
+Fm6             |         %       |  E°(b13)             |      %      |  D#m7         |  G#7(9)    G#7(b9) |  
       Um cantinho e um violão         Este amor, uma canção         Pra fazer feliz a quem se ama
-C#Maj7   C#6  |    C#m7                |   C#m6      |  Cm7           |  F7(b13)    |
-                               Muita calma pra pensar     E ter tempo pra sonhar 
-Db7(9)                |       %      |  E6/Gb       |   Em6/Gb             |        
+C#Maj7  |  C#6  |  C#m7                   |  C#m6      |  Cm7           |  F7(b13)    |
+                                     Muita calma pra pensar                  E ter tempo pra sonhar 
+A#7(9)                |       %      |  C#6/D#       |  C#m6/D#             |        
       Da janela vê-se o Corcovado   O Redentor, que lindo
-Fm6               |         %       |     E°(b13)           |      %           |  D#m7  |   D#m6       D#° | 
+Fm6               |         %       |  E°(b13)              |      %           |  D#m7  |  G#7(9)    G#7(b9) | 
       Quero a vida sempre assim     Com você perto de mim   Até o apagar   da velha chama
-C#Maj7   C#6  |    C#m7                |   C#m6  |   Cm7                   |  Fm7   |  
-                           E eu que era triste               Descrente deste mundo         
-A#m7               | D#47(9)    D#7(b9) | C7(13)   C7(b13)    |  F47    F7  |
+C#Maj7   |  C#6  |  C#m7             |  C#m6   |  Cm7                   |  Fm7   |  
+                                     E eu que era triste               Descrente deste mundo         
+A#m7               |  D#47(9)    D#7(b9) |  C7(#9)  |  F47   F7  |
       Ao encontrar  você,    eu  conheci
-A#m7               | D#47(9)    E°          |
-      O que é felicidade,       meu amor
+A#m7               |  D#47(9)    E°          |
+       O que é felicidade,       meu amor
